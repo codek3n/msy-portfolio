@@ -1,0 +1,45 @@
+@import url('https://fonts.cdnfonts.com/css/calibre?styles=36566,36567,36570,36571,36562,36563,36564,36565,36568,36569,36560,36561,36558,36559');
+
+@import url('https://fonts.cdnfonts.com/css/sf-mono');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@import '../sass/config';
+
+
+$font_primary: 'Calibre', 'Roboto', sans-serif;
+$font_secondary: "SF Mono", "Fira Code", "Fira Mono", monospace;
+$font_tertiary: 'Poppins', sans-serif;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline-style: none;
+}
+
+html,
+body {
+  font-family: $font_tertiary;
+  color: $color_tertiary;
+  background-color: $color_primary;
+}
+
+body {
+  margin-inline: 3.375rem;
+  letter-spacing: 0.05rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  // color: #fff;
+  color: $color_tertiary;
+}

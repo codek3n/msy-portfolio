@@ -1,0 +1,147 @@
+@import '../../sass/index.scss';
+
+.experience {
+  // border: 1px solid red;
+  padding-top: 7rem;
+  margin-top: 7rem;
+  margin-inline: 7rem;
+  min-height: 40rem;
+
+  // .experience__container {
+  //   border: 1px solid green;
+  // }
+
+
+  &__header__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__header {
+    @include header;
+  }
+
+  .header--number {
+    @include header__number;
+  }
+
+  .header--line {
+    @include header__line;
+  }
+
+  .experience__job__container {
+    display: flex;
+  }
+
+  .job__list--btn {
+    // border: 1px solid green;
+    border: transparent;
+    color: $color_quaternary;
+    background-color: transparent;
+    width: 10rem;
+    height: 3rem;
+
+    margin-right: 1rem;
+    text-align: start;
+    padding-left: 1.3rem;
+
+    font-family: $font_secondary;
+    // transition: all 0.2s ease-in-out;
+  }
+
+  .list__focus {
+    color: $color_secondary;
+    // border-left: 2px solid $color_secondary;
+
+    transition: all 0.2s ease-in-out;
+    transform-origin: top;
+    background-color: $color_button;
+  }
+
+
+  .job__list--btn:focus {
+    color: $color_secondary;
+    background-color: $color_button;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .job__list--btn:hover {
+    color: $color_secondary;
+    background-color: $color_button;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .job__list--btn:active {
+    color: $color_tertiary;
+    transition: all 0.1s ease-in-out;
+    background-color: $color_button;
+    opacity: 0.5;
+  }
+
+  .experience__job-description {
+
+    // transition: all 2s ease-in-out;
+
+    max-width: 100rem;
+
+    // border: 1px solid red;
+
+    .job__header {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 0.3rem;
+
+      span {
+        color: $color_secondary;
+      }
+    }
+
+    .job__date {
+      font-family: $font_secondary;
+      color: $color_quaternary;
+
+    }
+  }
+
+  .job__scope__sub-container {
+    display: flex;
+    align-items: start;
+    margin-bottom: 0.75rem;
+
+    color: $color_quaternary;
+
+    .job__scope {
+      // font-size: 1rem;
+      text-align: justify;
+    }
+  }
+
+  .bullet--icon__container {
+    margin-right: 0.7rem;
+  }
+
+  .bullet--icon {
+    color: $color_secondary;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+  }
+
+  .job__des {
+    display: none;
+  }
+
+  .job--active {
+    display: unset;
+  }
+
+  // .experience__list__container {
+  //   display: flex;
+  // }
+
+  // .list__transition--line {
+  //   background-color: $color_line;
+  //   width: 0.15rem;
+  //   height: 12rem;
+  // }
+
+}

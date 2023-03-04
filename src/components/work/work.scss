@@ -1,0 +1,110 @@
+@import '../../sass/index.scss';
+
+.work {
+  // border: 1px solid red;
+
+  // margin-top: 10rem;
+
+  padding-top: 7rem;
+  margin-top: 5rem;
+  
+
+  &__header__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__header {
+    @include header;
+  }
+
+  .header--number {
+    @include header__number;
+  }
+
+  .header--line {
+    @include header__line;
+  }
+
+  // .project__image__container {
+  //   // border: 1px solid red;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+
+  .project__image {
+    width: 100%;
+    height: auto;
+  }
+
+  // &__project {
+  //   // display: flex;
+  // }
+
+  .project__card {
+    display: flex;
+    flex-direction: column;
+    // align-items: end;
+    // text-align: end;
+
+    .project__featured--project {
+      color: $color_secondary;
+      font-family: $font_secondary;
+      margin-bottom: 0.2rem;
+    }
+
+    .project__header__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+
+    }
+
+    .project__title {
+      font-size: 1.75rem;
+      font-weight: 600;
+      // color: red;
+    }
+
+    .header__icon__container {
+      display: flex;
+      align-items: end;
+      font-size: 1.3rem;
+
+      .header__icon {
+        margin-left: 1.75rem;
+      }
+
+      .header__icon:hover {
+        color: $color_secondary;
+      }
+    }
+
+    .project__description__container {
+
+      display: flex;
+
+      .bullet--icon {
+        color: $color_secondary;
+        margin-right: 0.7rem;
+      }
+
+      // background-color: $color_button;
+      // padding: 2rem;
+      border-radius: 0.5rem;
+      margin-block: 2rem;
+
+      .project__description {
+        // text-align: justify;
+        color: $color_quaternary;
+
+        span {
+          color: $color_secondary;
+        }
+      }
+    }
+
+
+  }
+}

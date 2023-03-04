@@ -1,0 +1,53 @@
+@import '../../sass/index.scss';
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  width: 100%;
+  z-index: 1000;
+
+  transition: all 0.3s ease-in-out;
+
+  padding-block: 1.813rem;
+
+  &__container {
+    margin-inline: 3.375rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // border: 1px solid red;
+
+    ul {
+      display: flex;
+      font-size: 0.8rem;
+
+
+      span {
+        font-family: $font_secondary;
+        font-weight: 400;
+        color: $color_secondary;
+        margin-left: 2rem;
+      }
+
+    }
+  }
+}
+
+// scroll stuff
+
+.scrolling-down {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scrolling-up {
+  padding-block: 0.875rem;
+
+  background-color: $color_quinary;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.274);
+}

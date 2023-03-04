@@ -1,0 +1,92 @@
+@import '../../sass/index.scss';
+
+.about-me {
+  // border: 1px solid red;
+
+  padding-inline: 3rem;
+  padding-top: 7rem;
+
+  // &__container {
+  //   // width: 100%;
+  // }
+
+
+  &__header__container {
+    display: flex;
+    align-items: center;
+  }
+
+  .header--number {
+    @include header__number;
+
+  }
+
+  &__header {
+    @include header;
+
+  }
+
+  .header--line {
+    @include header__line;
+  }
+
+  p {
+    @include paragraph;
+  }
+
+  &__left {
+
+    margin-right: 2.5rem;
+    text-align: justify;
+
+
+    span {
+      color: $color_secondary;
+    }
+
+  }
+
+  &__picture__container {
+
+    max-width: 17rem;
+    height: fit-content;
+  }
+
+  .my-picture {
+    width: 120%;
+    height: auto;
+
+
+    // border-radius: 0.5rem;
+    // border: 1px solid red;
+  }
+
+
+  &__content__container {
+    display: flex;
+  }
+
+  .about-me__tech-list {
+    display: flex;
+    font-family: $font_secondary;
+    color: $color_quaternary;
+    font-size: 0.85rem;
+
+    .tech-list--left {
+      margin-right: 7%;
+    }
+
+    .tech-list__bullet {
+      display: flex;
+      align-items: center;
+
+      margin-bottom: 0.4rem;
+    }
+
+    .bullet--icon {
+      color: $color_secondary;
+      margin-right: 0.5rem;
+    }
+  }
+
+}

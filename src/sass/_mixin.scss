@@ -1,0 +1,26 @@
+@mixin header__line {
+  width: 30%;
+  height: 1px;
+  background-color: $color_line;
+  margin-inline: 1.75rem;
+}
+
+@mixin header {
+  color: $color_tertiary;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+@mixin paragraph {
+  font-size: 1rem;
+  font-weight: 400;
+  color: $color_quaternary;
+  line-height: 1.625rem;
+}
+
+@mixin header__number {
+  font-family: $font_secondary;
+  color: $color_secondary;
+  font-size: 1.75rem;
+  font-weight: 500;
+}

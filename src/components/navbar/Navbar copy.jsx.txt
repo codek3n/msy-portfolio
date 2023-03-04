@@ -1,0 +1,131 @@
+import React, { useEffect, useState } from 'react';
+import './navbar.scss';
+
+const Navbar = () => {
+  const [isScrollingDown, setIsScrollingDown] = useState(false);
+  const [isScrollingUp, setIsScrollingUp] = useState(false);
+  // const [scrollDown, setScrollDown] = useState(false);
+  // const [scrollUp, setScrollUp] = useState(false);
+
+
+  // const scrollingDown = () => {
+  //   let lastScroll = 0;
+
+  //   let currentScroll = window.pageYOffset;
+
+  //   if (currentScroll <= 0) {
+  //     setScrollUp(false)
+  //     setScrollDown(false)
+  //   }
+
+  //   if (currentScroll > 0) {
+  //     setScrollDown(true)
+  //     lastScroll = currentScroll
+  //   }
+
+  //   if (currentScroll < 0) {
+  //     setScrollUp(true)
+  //     setScrollDown(false)
+  //   }
+  //   // lastScroll = currentScroll
+  // }
+
+
+  // useEffect(() => {
+  //   window.addEventListener('scroll', scrollingDown)
+  // }, [scrollDown])
+
+
+  /* ----------------
+
+  const body = document.body;
+  // const body = document.querySelector('.navbar');
+  let lastScroll = 0;
+
+  window.addEventListener('scroll', () => {
+    let currentScroll = window.pageYOffset;
+
+    if (currentScroll <= 0) {
+      body.classList.remove('scrolling-up')
+    }
+
+    // if (currentScroll > lastScroll && !body.classList.contains('scrolling-down')) {
+    if (currentScroll > lastScroll && !body.classList.contains('scrolling-down')) {
+      body.classList.remove('scrolling-up')
+      body.classList.add('scrolling-down')
+    }
+
+    if (currentScroll < lastScroll && body.classList.contains('scrolling-down')) {
+      body.classList.remove('scrolling-down')
+      body.classList.add('scrolling-up')
+    }
+
+    lastScroll = currentScroll
+
+  })
+
+----------- */
+
+  // const scrolling = () => {
+  //   let currentScroll = window.pageXOffset;
+
+  //   switch (currentScroll) {
+  //     case !0:
+  //       setIsScrollingDown(true)
+  //       break
+  //     case !2:
+  //       setIsScrollingDown(false)
+  //       break
+  //   }
+  // }
+
+  // useEffect(() => {
+  //   scrolling()
+  // }, [isScrollingDown])
+  // const currentScroll = window.pageYOffset
+  // let currentScroll = window.scrollY
+
+  const scrolling = () => {
+    let lastScroll = 0
+    let currentScroll = window.scrollY
+
+    // if (currentScroll <= 0) {
+    if (currentScroll > 0) {
+      setIsScrollingDown(true)
+    }
+
+    if (currentScroll <= 0) {
+      setIsScrollingDown(false)
+    }
+
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', scrolling)
+  }, [])
+
+
+
+
+  return (
+    // <div className='navbar'>
+    <div className={isScrollingDown ? 'navbar scrolling-down' : 'navbar'}>
+      <div className='navbar__container'>
+
+        <h1>
+          LOGO
+        </h1>
+
+        <ul>
+          <li><span>01.</span> About</li>
+          <li><span>02.</span> Experience</li>
+          <li><span>03.</span> Work</li>
+          <li><span>04.</span> Contact</li>
+        </ul>
+
+      </div>
+    </div>
+  )
+}
+
+export default Navbar

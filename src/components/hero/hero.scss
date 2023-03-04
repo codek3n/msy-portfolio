@@ -1,0 +1,72 @@
+@import '../../sass/index.scss';
+
+
+.hero {
+  // border: 1px solid red;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+
+  &__container {
+    // border: 1px solid green;
+    margin: auto;
+    // margin-inline: 28.375rem;
+    // width: clamp(5rem, 75%, 55rem);
+    width: 100%;
+
+
+
+
+
+    h4 {
+      font-family: $font_secondary;
+      font-size: 1.1rem;
+      color: $color_secondary;
+      font-weight: 400;
+
+      margin-bottom: 1rem;
+    }
+
+    h1,
+    h2 {
+      font-size: 4rem;
+      font-weight: 600;
+      color: $color_tertiary;
+    }
+
+    h2 {
+      color: $color_quaternary;
+    }
+
+    .hero__description {
+      // border: 1px solid red;
+      font-size: 1rem;
+      font-weight: 400;
+      color: $color_quaternary;
+      width: clamp(5rem, 75%, 50rem);
+      line-height: 1.625rem;
+
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+    }
+
+  }
+
+  &__resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $color_secondary;
+
+    width: 16rem;
+    padding-block: 1.2rem;
+    border-radius: 0.3rem;
+
+
+    &__text {
+      font-family: $font_secondary;
+      color: $color_secondary;
+    }
+  }
+}
