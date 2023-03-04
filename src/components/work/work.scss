@@ -7,7 +7,7 @@
 
   padding-top: 7rem;
   margin-top: 5rem;
-  
+
 
   &__header__container {
     display: flex;
@@ -74,6 +74,10 @@
 
       .header__icon {
         margin-left: 1.75rem;
+      }
+
+      .arrow__redirect {
+        font-size: 1.5rem;
       }
 
       .header__icon:hover {
