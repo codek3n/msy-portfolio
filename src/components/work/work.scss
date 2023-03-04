@@ -88,6 +88,7 @@
     .project__description__container {
 
       display: flex;
+      text-align: justify;
 
       .bullet--icon {
         color: $color_secondary;
@@ -110,5 +111,34 @@
     }
 
 
+
+
   }
+
+
+
+  .card--2 {
+    // border: 1px solid red;
+    margin-right: 5rem;
+  }
+
+  .project__image--1 {
+    // margin-left: 10rem;
+  }
+
+  .project__container--2 {
+    
+  }
+
+  .card--1 {
+    // border: 1px solid red;
+    margin-left: 5rem;
+  }
+
+  .project__image--2 {
+    // margin-left: 10rem;
+    // flex: 10;
+  }
+
+
 }
