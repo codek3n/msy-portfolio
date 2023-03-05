@@ -2,7 +2,7 @@ import React from 'react';
 import './hero.scss'
 const Hero = () => {
   return (
-    <div className='hero'>
+    <div className='hero' id='home'>
       <div className='hero__container'>
 
         <h4>

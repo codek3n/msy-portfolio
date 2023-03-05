@@ -41,9 +41,12 @@ const Navbar = () => {
     <div className={navbarClass}>
       <div className='navbar__container'>
 
-        <h1>
-          LOGO
-        </h1>
+        <Link to='#home' smooth>
+          <h1>
+            LOGO
+          </h1>
+        </Link>
+
 
         <ul>
 
