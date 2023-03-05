@@ -26,7 +26,7 @@
   }
 
   &--icon {
-    margin-block: 1.6rem;
+    margin-block: 1rem;
   }
 
   &__line {
@@ -51,8 +51,26 @@
     font-weight: 500;
     transform-origin: right;
     rotate: 90deg;
+    cursor: pointer;
+
 
 
 
   }
+
+  a {
+    color: $color_quaternary;
+    top: 0;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+  }
+
+  a:hover {
+    color: $color_secondary;
+    top: -0.2rem;
+  }
+
+  // .side-nav--icon {
+  //   transition: all 0.3s ease-in-out;
+  // }
 }

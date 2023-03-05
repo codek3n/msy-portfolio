@@ -53,20 +53,13 @@
 
   }
 
-  &__resume {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid $color_secondary;
-
+  &__btn {
+    @include btn;
     width: 16rem;
-    padding-block: 1.2rem;
-    border-radius: 0.3rem;
+    transition: all 200ms ease-in-out;
+  }
 
-
-    &__text {
-      font-family: $font_secondary;
-      color: $color_secondary;
-    }
+  &__btn:hover {
+    @include btn_hover;
   }
 }

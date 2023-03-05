@@ -45,13 +45,6 @@ const Navbar = () => {
           LOGO
         </h1>
 
-        {/* <ul>
-          <li><span>01.</span> About</li>
-          <li><span>02.</span> Experience</li>
-          <li><span>03.</span> Work</li>
-          <li><span>04.</span> Contact</li>
-        </ul> */}
-
         <ul>
 
           <li>
@@ -72,7 +65,12 @@ const Navbar = () => {
             </Link>
           </li>
 
-          <li><span>04.</span> Contact</li>
+          <li>
+            <Link to='#contact' smooth>
+              <span>04.</span> Contact
+            </Link>
+          </li>
+
         </ul>
 
       </div>

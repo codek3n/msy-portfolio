@@ -4,6 +4,8 @@ import SideNav from '../../components/side-nav/SideNav';
 import AboutMe from '../../components/about-me/AboutMe';
 import Experience from '../../components/experience/Experience';
 import Work from '../../components/work/Work';
+import Contact from '../../components/contact/Contact';
+
 import './home.scss';
 
 const Home = () => {
@@ -14,6 +16,7 @@ const Home = () => {
       <Experience />
       <SideNav />
       <Work />
+      <Contact />
     </div>
   )
 }
