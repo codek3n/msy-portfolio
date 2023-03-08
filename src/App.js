@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/navbar/Navbar';
+import SideNav from './components/side-nav/SideNav';
 import Directory from './config/Directory';
 import { BrowserRouter } from 'react-router-dom';
 
@@ -9,6 +10,7 @@ const App = () => {
       <div className='app'>
         <Navbar />
         <Directory />
+        <SideNav />
       </div>
     </BrowserRouter>
   )

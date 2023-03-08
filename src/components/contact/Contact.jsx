@@ -15,16 +15,16 @@ const Contact = () => {
         </h1>
 
         <p className='contact__content'>
-          Although I'm not currently looking for any new opportunities,
-          my inbox is always open. Whether you have a question
-          or just want to say hi, I'll try my best to get back to you!
+          Hoping to find a frontend job that lets me turn my love for web development into a lifelong career and a legitimate excuse to buy more computer monitors"
         </p>
+
 
         <a href='mailto:msycodebiz@gmail.com' rel="noreferrer">
           <button className='contact__btn'>
             Say Hello
           </button>
         </a>
+
 
       </div>
 

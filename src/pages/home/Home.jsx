@@ -14,9 +14,9 @@ const Home = () => {
       <Hero />
       <AboutMe />
       <Experience />
-      <SideNav />
       <Work />
       <Contact />
+      {/* <SideNav /> */}
     </div>
   )
 }

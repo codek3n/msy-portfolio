@@ -6,6 +6,10 @@
   left: 0;
   right: 0;
 
+  // background-color: red;
+
+  z-index: 1;
+
   &__container {
     display: flex;
     align-items: end;
@@ -27,6 +31,7 @@
 
   &--icon {
     margin-block: 1rem;
+
   }
 
   &__line {
