@@ -28,13 +28,37 @@
   font-weight: 500;
 }
 
+// @mixin btn {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   background-color: transparent;
+//   color: $color_secondary;
+
+//   font-family: $font_secondary;
+//   font-size: 0.875rem;
+
+//   border: 1px solid $color_secondary;
+
+//   padding-block: 1.2rem;
+//   border-radius: 0.3rem;
+
+//   cursor: pointer;
+
+// }
+
 @mixin btn {
   display: flex;
   justify-content: center;
   align-items: center;
 
+  // background-color: #358c7b;
   background-color: transparent;
+  // color: #e5e5e5;
+  // color: $color_secondary;
   color: $color_secondary;
+
 
   font-family: $font_secondary;
   font-size: 0.875rem;
@@ -43,11 +67,13 @@
 
   padding-block: 1.2rem;
   border-radius: 0.3rem;
+  // border-radius: 100rem;
 
   cursor: pointer;
 
 }
 
 @mixin btn_hover {
-  background-color: #64ffdb15;
+  background-color: #8cafa9;
+  color: $color_primary;
 }

@@ -34,7 +34,7 @@
   }
 
   .job__list--btn {
-    border: transparent;
+    border: none;
     color: $color_quaternary;
     background-color: transparent;
     width: 10rem;
@@ -45,13 +45,19 @@
     padding-left: 1.3rem;
 
     font-family: $font_secondary;
-    // transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    // disabled text selection
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
   }
 
   .list__focus {
     color: $color_secondary;
-    // border-left: 2px solid $color_secondary;
-
     transition: all 0.2s ease-in-out;
     transform-origin: top;
     background-color: $color_button;
@@ -61,6 +67,7 @@
   .job__list--btn:focus {
     color: $color_secondary;
     background-color: $color_button;
+    // border: 1px solid $color_button;
     transition: all 0.2s ease-in-out;
   }
 
@@ -221,9 +228,8 @@
     }
 
     .job__list--btn {
-      // margin-right: 1rem;
-      border: 1px solid #24344e;
 
+      border: 1px solid $color_btn-border;
       border-radius: 0.3rem;
       text-align: center;
       padding-left: 0;
@@ -236,6 +242,24 @@
       font-family: $font_secondary;
     }
 
+    .job__list--btn:hover {
+      border: 1px solid $color_button;
+    }
+
+    .job__list--btn:focus {
+      border: 1px solid $color_button;
+    }
+
+    .job__list--btn:active {
+      color: $color_tertiary;
+      transition: all 0.1s ease-in-out;
+      background-color: $color_button;
+      opacity: 0.5;
+    }
+
+    .list__focus {
+      border: 1px solid $color_button;
+    }
 
     .experience__job-description {
 

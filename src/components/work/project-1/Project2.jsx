@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import zcShoppy1 from '../../../assets/images/zc-shoppy1.jpg';
-import zcShoppy2 from '../../../assets/images/zc-shoppy2.jpg';
+import zcShoppy1 from '../../../assets/images/zc-shoppy1.png';
+import zcShoppy2 from '../../../assets/images/zc-shoppy2.png';
 import { RxTriangleRight } from 'react-icons/rx';
 import { HiArrowTopRightOnSquare } from 'react-icons/hi2';
 import { FiGithub } from 'react-icons/fi';

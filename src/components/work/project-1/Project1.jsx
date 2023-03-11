@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import caster1 from '../../../assets/images/caster1.jpg';
-import caster2 from '../../../assets/images/caster2.jpg';
+import caster1 from '../../../assets/images/caster1.png';
+import caster2 from '../../../assets/images/caster2.png';
 import { RxTriangleRight } from 'react-icons/rx';
 import { HiArrowTopRightOnSquare } from 'react-icons/hi2';
 import { FiGithub } from 'react-icons/fi';

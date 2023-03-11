@@ -65,7 +65,9 @@
 
   background-color: $color_quinary;
   backdrop-filter: blur(10px);
-  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.274);
+  // box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 1rem #1a323634;
+
 }
 
 @media (max-width:600px) {
@@ -77,7 +79,11 @@
     &__container {
       margin-inline: 2rem;
 
+
       .navbar__menu {
+        border-top: 1px solid $color_primary;
+        border-left: 1px solid $color_primary;
+        border-top-left-radius: 1rem;
         position: fixed;
         top: 0;
         right: -100vw;
@@ -89,7 +95,8 @@
         background-color: $color_button;
         transition: all 200ms ease-in-out;
 
-        box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.274);
+        // box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.274);
+        box-shadow: 0 3px 1rem #1a323659;
 
 
         li {
