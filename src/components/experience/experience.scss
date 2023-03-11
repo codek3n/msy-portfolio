@@ -47,13 +47,6 @@
     font-family: $font_secondary;
     transition: all 0.2s ease-in-out;
 
-    // disabled text selection
-    -webkit-user-select: none;
-    /* Safari */
-    -ms-user-select: none;
-    /* IE 10 and IE 11 */
-    user-select: none;
-    /* Standard syntax */
   }
 
   .list__focus {
@@ -173,7 +166,7 @@
 
     ::-webkit-scrollbar-track {
       background-color: transparent;
-      background-color: #3c5379;
+      background-color: $color_line;
     }
 
     ::-webkit-scrollbar-thumb {
