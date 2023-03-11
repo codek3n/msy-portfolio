@@ -1,127 +1,106 @@
 import React, { useEffect, useState } from 'react';
+import { Slant as Hamburger } from 'hamburger-react'
+
 import './navbar.scss';
 
+import { HashLink as Link } from 'react-router-hash-link';
+
 const Navbar = () => {
-  const [isScrollingDown, setIsScrollingDown] = useState(false);
-  const [isScrollingUp, setIsScrollingUp] = useState(false);
-  // const [scrollDown, setScrollDown] = useState(false);
-  // const [scrollUp, setScrollUp] = useState(false);
+  const [navbarClass, setNavbarClass] = useState('navbar');
+  const [isOpen, setOpen] = useState(false);
 
-
-  // const scrollingDown = () => {
-  //   let lastScroll = 0;
-
-  //   let currentScroll = window.pageYOffset;
-
-  //   if (currentScroll <= 0) {
-  //     setScrollUp(false)
-  //     setScrollDown(false)
-  //   }
-
-  //   if (currentScroll > 0) {
-  //     setScrollDown(true)
-  //     lastScroll = currentScroll
-  //   }
-
-  //   if (currentScroll < 0) {
-  //     setScrollUp(true)
-  //     setScrollDown(false)
-  //   }
-  //   // lastScroll = currentScroll
-  // }
-
-
-  // useEffect(() => {
-  //   window.addEventListener('scroll', scrollingDown)
-  // }, [scrollDown])
-
-
-  /* ----------------
-
-  const body = document.body;
-  // const body = document.querySelector('.navbar');
-  let lastScroll = 0;
-
-  window.addEventListener('scroll', () => {
-    let currentScroll = window.pageYOffset;
-
-    if (currentScroll <= 0) {
-      body.classList.remove('scrolling-up')
-    }
-
-    // if (currentScroll > lastScroll && !body.classList.contains('scrolling-down')) {
-    if (currentScroll > lastScroll && !body.classList.contains('scrolling-down')) {
-      body.classList.remove('scrolling-up')
-      body.classList.add('scrolling-down')
-    }
-
-    if (currentScroll < lastScroll && body.classList.contains('scrolling-down')) {
-      body.classList.remove('scrolling-down')
-      body.classList.add('scrolling-up')
-    }
-
-    lastScroll = currentScroll
-
-  })
-
------------ */
-
-  // const scrolling = () => {
-  //   let currentScroll = window.pageXOffset;
-
-  //   switch (currentScroll) {
-  //     case !0:
-  //       setIsScrollingDown(true)
-  //       break
-  //     case !2:
-  //       setIsScrollingDown(false)
-  //       break
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   scrolling()
-  // }, [isScrollingDown])
-  // const currentScroll = window.pageYOffset
-  // let currentScroll = window.scrollY
+  let lastScroll = 0
 
   const scrolling = () => {
-    let lastScroll = 0
-    let currentScroll = window.scrollY
 
-    // if (currentScroll <= 0) {
-    if (currentScroll > 0) {
-      setIsScrollingDown(true)
+    const currentPosition = window.scrollY
+
+    if (currentPosition > lastScroll) {
+      setNavbarClass('navbar scrolling-down')
     }
 
-    if (currentScroll <= 0) {
-      setIsScrollingDown(false)
+    if (currentPosition < lastScroll) {
+      setNavbarClass('navbar scrolling-up')
     }
 
+    if (currentPosition <= 0) {
+      setNavbarClass('navbar')
+    }
+
+    lastScroll = currentPosition
   }
 
   useEffect(() => {
     window.addEventListener('scroll', scrolling)
+
+    return () => {
+      window.removeEventListener('scroll', scrolling)
+    }
   }, [])
 
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }, [isOpen])
 
 
   return (
-    // <div className='navbar'>
-    <div className={isScrollingDown ? 'navbar scrolling-down' : 'navbar'}>
+    <div className={navbarClass}>
       <div className='navbar__container'>
 
-        <h1>
-          LOGO
-        </h1>
+        <Link to='#home' smooth>
+          <h1 onClick={() => setOpen(false)}>
+            LOGO
+          </h1>
+        </Link>
 
-        <ul>
-          <li><span>01.</span> About</li>
-          <li><span>02.</span> Experience</li>
-          <li><span>03.</span> Work</li>
-          <li><span>04.</span> Contact</li>
-        </ul>
+        <div className={isOpen ? 'navbar__menu modal-bg' : 'navbar__menu'}>
+          <ul className={isOpen ? 'navbar__menu is-open' : 'navbar__menu'}>
+
+            <li onClick={() => setOpen(false)}>
+              <Link to='#about-me' smooth>
+                <span>01.</span> About
+              </Link>
+            </li>
+
+            <li onClick={() => setOpen(false)}>
+              <Link to='#experience' smooth>
+                <span>02.</span> Experience
+              </Link>
+            </li>
+
+            <li onClick={() => setOpen(false)}>
+              <Link to='#projects' smooth>
+                <span>03.</span> Work
+              </Link>
+            </li>
+
+            <li onClick={() => setOpen(false)}>
+              <Link to='#contact' smooth>
+                <span>04.</span> Contact
+              </Link>
+            </li>
+
+          </ul>
+        </div>
+
+        {/* <div className={isOpen ? 'navbar__menu modal-bg' : 'navbar__menu'}></div> */}
+
+
+        <button className='navbar__hamburger-menu--btn'>
+
+          <Hamburger
+            size={22}
+            // color='#64ffda'
+            toggled={isOpen}
+            toggle={setOpen}
+          />
+
+        </button>
 
       </div>
     </div>

@@ -1,8 +1,11 @@
 @mixin header__line {
-  width: 30%;
+  // width: 30%;
+  width: 100%;
   height: 1px;
   background-color: $color_line;
-  margin-inline: 1.75rem;
+  // margin-inline: 1.75rem;
+  margin-left: 1.75rem;
+  flex: 1;
 }
 
 @mixin header {

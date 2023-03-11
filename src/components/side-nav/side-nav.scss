@@ -58,9 +58,6 @@
     rotate: 90deg;
     cursor: pointer;
 
-
-
-
   }
 
   a {
@@ -78,4 +75,70 @@
   // .side-nav--icon {
   //   transition: all 0.3s ease-in-out;
   // }
+}
+
+@media (max-width: 1024px) {
+  .side-nav {
+
+
+    &__container {
+      margin-inline: 2rem;
+      // border: 1px solid red;
+    }
+  }
+}
+
+// @media (max-width: 768px) {
+@media (max-width: 768px) {
+  .side-nav {
+    position: unset;
+    margin-block: 2rem;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-inline: 0rem;
+
+      // border: 1px solid red;
+    }
+
+    &__icons__container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      // border: 1px solid pink;
+    }
+
+    &--icon {
+      font-size: 1.3rem;
+      margin-inline: .9rem;
+      // border: 1px solid red;
+    }
+
+
+    &__gmail {
+      margin-inline: auto;
+      display: unset;
+      // border: 1px solid red;
+
+    }
+
+    &__gmail--contact {
+      font-weight: 600;
+      transform-origin: unset;
+      letter-spacing: 0.1rem;
+
+      rotate: unset;
+      cursor: pointer;
+
+    }
+
+    &__line {
+      display: none;
+    }
+  }
 }

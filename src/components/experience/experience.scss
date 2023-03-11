@@ -34,7 +34,6 @@
   }
 
   .job__list--btn {
-    // border: 1px solid green;
     border: transparent;
     color: $color_quaternary;
     background-color: transparent;
@@ -84,7 +83,6 @@
 
     max-width: 100rem;
 
-    // border: 1px solid red;
 
     .job__header {
       font-size: 1.2rem;
@@ -144,4 +142,118 @@
   //   height: 12rem;
   // }
 
+}
+
+@media (max-width: 800px) {
+  .experience {
+    margin-top: 0rem;
+    margin-inline: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience {
+    margin-top: 0rem;
+    margin-inline: 0rem;
+  }
+}
+
+// @media (max-width: 375px) {
+@media (max-width: 500px) {
+  .experience {
+    // border: 1px solid red;
+    min-height: 47rem;
+
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+      background-color: #3c5379;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: $color_secondary;
+      border-radius: 50px;
+    }
+
+    ::-webkit-scrollbar {
+      height: .2rem;
+    }
+
+
+    .header--line {
+      margin-left: .75rem;
+    }
+
+    .header--number {
+      font-size: 1.1rem;
+    }
+
+    &__header {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 0.938rem;
+      line-height: normal;
+    }
+
+    .experience__job__container {
+      display: unset;
+    }
+
+    .experience__list__container {
+      // border: 1px solid red;
+
+      margin-bottom: 2rem;
+
+      .experience__list {
+        display: flex;
+        overflow: auto;
+        gap: 1rem;
+      }
+
+      .snap__inline {
+        scroll-snap-type: inline mandatory;
+      }
+
+      .snap__inline>* {
+        scroll-snap-align: start;
+      }
+    }
+
+    .job__list--btn {
+      // margin-right: 1rem;
+      border: 1px solid #24344e;
+
+      border-radius: 0.3rem;
+      text-align: center;
+      padding-left: 0;
+
+      width: 12rem;
+
+      margin-right: 0;
+      margin-bottom: 1rem;
+
+      font-family: $font_secondary;
+    }
+
+
+    .experience__job-description {
+
+      // border: 1px solid red;
+
+      .job__header {
+        font-size: 1.1rem;
+
+        span {
+          color: $color_secondary;
+        }
+      }
+
+      .job__date {
+        font-family: $font_secondary;
+        color: $color_quaternary;
+
+      }
+    }
+  }
 }

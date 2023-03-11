@@ -18,12 +18,10 @@
 
   .header--number {
     @include header__number;
-
   }
 
   &__header {
     @include header;
-
   }
 
   .header--line {
@@ -47,18 +45,15 @@
   }
 
   &__picture__container {
-
-    max-width: 17rem;
+    max-width: 35%;
     height: fit-content;
+
   }
 
   .my-picture {
-    width: 120%;
+    width: 110%;
     height: auto;
 
-
-    // border-radius: 0.5rem;
-    // border: 1px solid red;
   }
 
 
@@ -72,15 +67,13 @@
     color: $color_quaternary;
     font-size: 0.85rem;
 
-    .tech-list--left {
-      margin-right: 7%;
-    }
+    gap: 7%;
 
     .tech-list__bullet {
       display: flex;
       align-items: center;
 
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.75rem;
     }
 
     .bullet--icon {
@@ -89,4 +82,84 @@
     }
   }
 
+}
+
+
+@media (max-width: 800px) {
+  .about-me {
+    // border: 1px solid red;
+    padding-inline: 2.5rem;
+
+
+    &__content__container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__left {
+
+      margin-right: 0rem;
+
+
+      span {
+        color: $color_secondary;
+      }
+
+    }
+
+    &__picture__container {
+      max-width: 55%;
+
+      margin-inline: auto;
+      margin-block: 3rem;
+
+    }
+
+    .my-picture {
+      width: 100%;
+    }
+
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .about-me {
+    // border: 1px solid red;
+    padding-inline: 0rem;
+  }
+}
+
+// @media (max-width:375px) {
+@media (max-width:500px) {
+  .about-me {
+    // border: 1px solid red;
+
+    .header--line {
+      @include header__line;
+      margin-left: .75rem;
+    }
+
+    .header--number {
+      font-size: 1.1rem;
+    }
+
+    &__header {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 0.938rem;
+      line-height: normal;
+    }
+
+    &__picture__container {
+      max-width: 75%;
+    }
+
+    .about-me__tech-list {
+      font-size: 0.75rem;
+    }
+  }
 }

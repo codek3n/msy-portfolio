@@ -32,6 +32,7 @@
     h2 {
       font-size: 4rem;
       font-weight: 600;
+      line-height: 5.5rem;
       color: $color_tertiary;
     }
 
@@ -61,5 +62,83 @@
 
   &__btn:hover {
     @include btn_hover;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    // border: 1px solid red;
+    padding-inline: 3rem;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .hero {
+    padding-top: 5rem;
+    padding-inline: 2.5rem;
+
+    h1,
+    h2 {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+  }
+}
+
+@media (max-width: 786px) {
+  .hero {
+    // border: 1px solid red;
+    padding-top: 0rem;
+    padding-inline: 0rem;
+
+    h1,
+    h2 {
+      font-size: 3.5rem;
+      line-height: 5.5rem;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    // border: 1px solid red;
+  }
+}
+
+// @media (max-width:375px) {
+@media (max-width:500px) {
+  .hero {
+
+    // border: 1px solid red;
+    h4 {
+      font-size: 1rem;
+    }
+
+    h1,
+    h2 {
+      font-size: 1.9rem;
+      line-height: 1.3;
+    }
+
+    // h2 {
+    //   // font-size: 1.7rem;
+    //   // font-weight: 400;
+    //   // margin-top: 1rem;
+    // }
+
+    .hero__description {
+      // border: 1px solid red;
+      font-size: 0.875rem;
+      line-height: normal;
+      width: unset;
+    }
+
+    &__btn {
+      @include btn;
+      width: unset;
+      padding-inline: 1.5rem;
+      transition: all 200ms ease-in-out;
+    }
   }
 }

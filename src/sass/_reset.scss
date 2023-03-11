@@ -27,12 +27,36 @@ body {
   font-family: $font_tertiary;
   color: $color_tertiary;
   background-color: $color_primary;
+
+  // scrollbar----
+
+  ::-webkit-scrollbar {
+    width: .35rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    // background-color: $color_secondary;
+    background-color: #3c5379;
+    border-radius: 50px;
+  }
 }
 
 body {
   margin-inline: 3.375rem;
   // letter-spacing: 0.05rem;
 }
+
+// @media (max-width:375px) {
+@media (max-width:500px) {
+  body {
+    margin-inline: 2rem;
+  }
+}
+
 
 li {
   list-style: none;

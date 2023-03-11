@@ -5,6 +5,7 @@ import Directory from './config/Directory';
 import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
+
   return (
     <BrowserRouter>
       <div className='app'>

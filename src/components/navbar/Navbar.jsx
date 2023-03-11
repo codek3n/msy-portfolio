@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import { Slant as Hamburger } from 'hamburger-react'
 
 import './navbar.scss';
 
 import { HashLink as Link } from 'react-router-hash-link';
 
 const Navbar = () => {
-  const [navbarClass, setNavbarClass] = useState('navbar')
+  const [navbarClass, setNavbarClass] = useState('navbar');
+  const [isOpen, setOpen] = useState(false);
 
   let lastScroll = 0
 
@@ -37,47 +39,70 @@ const Navbar = () => {
   }, [])
 
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }, [isOpen])
+
+
   return (
-    <div className={navbarClass}>
-      <div className='navbar__container'>
+    <>
+      <div className={navbarClass}>
+        <div className='navbar__container'>
 
-        <Link to='#home' smooth>
-          <h1>
-            LOGO
-          </h1>
-        </Link>
+          <Link to='#home' smooth>
+            <h1 onClick={() => setOpen(false)}>
+              LOGO
+            </h1>
+          </Link>
 
+          <ul className={isOpen ? 'navbar__menu is-open' : 'navbar__menu'}>
 
-        <ul>
+            <li onClick={() => setOpen(false)}>
+              <Link to='#about-me' smooth>
+                <span>01.</span> About
+              </Link>
+            </li>
 
-          <li>
-            <Link to='#about-me' smooth>
-              <span>01.</span> About
-            </Link>
-          </li>
+            <li onClick={() => setOpen(false)}>
+              <Link to='#experience' smooth>
+                <span>02.</span> Experience
+              </Link>
+            </li>
 
-          <li>
-            <Link to='#experience' smooth>
-              <span>02.</span> Experience
-            </Link>
-          </li>
+            <li onClick={() => setOpen(false)}>
+              <Link to='#projects' smooth>
+                <span>03.</span> Work
+              </Link>
+            </li>
 
-          <li>
-            <Link to='#projects' smooth>
-              <span>03.</span> Work
-            </Link>
-          </li>
+            <li onClick={() => setOpen(false)}>
+              <Link to='#contact' smooth>
+                <span>04.</span> Contact
+              </Link>
+            </li>
 
-          <li>
-            <Link to='#contact' smooth>
-              <span>04.</span> Contact
-            </Link>
-          </li>
+          </ul>
 
-        </ul>
+          <button className='navbar__hamburger-menu--btn'>
 
+            <Hamburger
+              size={22}
+              // color='#64ffda'
+              toggled={isOpen}
+              toggle={setOpen}
+            />
+
+          </button>
+
+        </div>
       </div>
-    </div>
+
+      <div className={isOpen ? 'background__black--active' : 'background__black'} />
+    </>
   )
 }
 

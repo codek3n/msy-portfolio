@@ -57,20 +57,17 @@ const Experience = () => {
 
           <div className='experience__list__container'>
 
-            <div className='list__transition--line'></div>
+            {/* <div className='list__transition--line'></div> */}
 
-
-            <ul className='experience__list'>
+            <ul className='experience__list snap__inline'>
 
               <li className='job__company-name'>
-                {/* <button className='job__list--btn' onClick={() => showJob1()} autoFocus> */}
                 <button className={isActiveJob1 ? 'job__list--btn list__focus' : 'job__list--btn'} onClick={() => showJob1()} autoFocus>
                   OE Works
                 </button>
               </li>
 
               <li className='job__company-name'>
-                {/* <button className='job__list--btn' onClick={() => showJob2()}> */}
                 <button className={isActiveJob2 ? 'job__list--btn list__focus' : 'job__list--btn'} onClick={() => showJob2()}>
                   Phil. Granite
                 </button>
