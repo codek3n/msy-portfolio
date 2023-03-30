@@ -1,6 +1,5 @@
 import React from 'react';
 import Hero from '../../components/hero/Hero';
-import SideNav from '../../components/side-nav/SideNav';
 import AboutMe from '../../components/about-me/AboutMe';
 import Experience from '../../components/experience/Experience';
 import Work from '../../components/work/Work';
@@ -16,7 +15,6 @@ const Home = () => {
       <Experience />
       <Work />
       <Contact />
-      {/* <SideNav /> */}
     </div>
   )
 }

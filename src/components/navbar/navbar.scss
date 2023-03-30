@@ -10,13 +10,16 @@
   z-index: 1000;
   // z-index: 4;
 
-  transition: all 0.3s ease-in-out;
+  transition: all 0.25s ease-in-out;
 
   padding-block: 1.813rem;
 
   letter-spacing: 0.05px;
 
   // border: 1px solid pink;
+
+  background-color: $color_quinary;
+  backdrop-filter: opacity(0);
 
 
   &__container {
@@ -29,6 +32,10 @@
 
     margin-inline: 3.375rem;
     // padding-inline: 3.375rem;
+
+    // .navbar__logo {
+
+    // }
 
 
     .navbar__menu {
@@ -57,6 +64,7 @@
 
 .scrolling-down {
   transform: translate3d(0, -100%, 0);
+  backdrop-filter: blur(10px);
 
 }
 

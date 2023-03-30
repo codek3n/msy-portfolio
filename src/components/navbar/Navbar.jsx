@@ -3,7 +3,9 @@ import { Slant as Hamburger } from 'hamburger-react'
 
 import './navbar.scss';
 
-import { HashLink as Link } from 'react-router-hash-link';
+// import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink as Linking } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [navbarClass, setNavbarClass] = useState('navbar');
@@ -53,36 +55,37 @@ const Navbar = () => {
       <div className={navbarClass}>
         <div className='navbar__container'>
 
-          <Link to='#home' smooth>
-            <h1 onClick={() => setOpen(false)}>
+          <Linking to='#home' smooth>
+            <h1 className='navbar__logo' onClick={() => setOpen(false)}>
               LOGO
             </h1>
-          </Link>
+          </Linking>
+
 
           <ul className={isOpen ? 'navbar__menu is-open' : 'navbar__menu'}>
 
             <li onClick={() => setOpen(false)}>
-              <Link to='#about-me' smooth>
+              <Linking to='#about-me' smooth>
                 <span>01.</span> About
-              </Link>
+              </Linking>
             </li>
 
             <li onClick={() => setOpen(false)}>
-              <Link to='#experience' smooth>
+              <Linking to='#experience' smooth>
                 <span>02.</span> Experience
-              </Link>
+              </Linking>
             </li>
 
             <li onClick={() => setOpen(false)}>
-              <Link to='#projects' smooth>
+              <Linking to='#projects' smooth>
                 <span>03.</span> Work
-              </Link>
+              </Linking>
             </li>
 
             <li onClick={() => setOpen(false)}>
-              <Link to='#contact' smooth>
+              <Linking to='#contact' smooth>
                 <span>04.</span> Contact
-              </Link>
+              </Linking>
             </li>
 
           </ul>

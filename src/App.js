@@ -6,6 +6,8 @@ import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
 
+  window.scrollTo({ top: 0 })
+
   return (
     <BrowserRouter>
       <div className='app'>

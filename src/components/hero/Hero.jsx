@@ -1,6 +1,9 @@
 import React from 'react';
 import './hero.scss'
 const Hero = () => {
+
+  // window.scrollTo({ top: 0 })
+
   return (
     <div className='hero' id='home'>
       <div className='hero__container'>

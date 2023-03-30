@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { RxTriangleRight } from 'react-icons/rx'
+import { useState } from 'react';
+import { RxTriangleRight } from 'react-icons/rx';
 import './experience.scss';
 
 const Experience = () => {

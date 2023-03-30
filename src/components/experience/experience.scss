@@ -11,6 +11,9 @@
   //   border: 1px solid green;
   // }
 
+  transition: all 2s ease-in-out;
+
+
 
   &__header__container {
     display: flex;
@@ -47,6 +50,14 @@
     font-family: $font_secondary;
     transition: all 0.2s ease-in-out;
 
+    // disabled text selection
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+
   }
 
   .list__focus {
@@ -79,7 +90,7 @@
 
   .experience__job-description {
 
-    // transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
 
     max-width: 100rem;
 
