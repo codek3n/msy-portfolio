@@ -58,15 +58,34 @@
   //   transition: all 200ms ease-in-out;
   // }
 
+
+
   &__btn {
     @include btn;
     width: 16rem;
     transition: all 200ms ease-in-out;
+
+    .resume__link {
+      color: $color_secondary;
+      // border: 1px solid red;
+      padding-block: 1.2rem;
+      width: 100%;
+    }
   }
 
   &__btn:hover {
     @include btn_hover;
+
+    .resume__link {
+      color: $color_primary;
+    }
   }
+
+  // .resume__link {
+  //   display: flex;
+  //   border: 1px solid red;
+  //   text-align: end;
+  // }
 }
 
 @media (max-width: 1024px) {

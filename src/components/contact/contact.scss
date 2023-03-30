@@ -8,6 +8,8 @@
   padding-top: 10rem;
   padding-bottom: 10rem;
 
+  // z-index: 2000;
+
 
   &__container {
     // border: 1px solid green;
@@ -35,6 +37,9 @@
       color: $color_quaternary;
       text-align: center;
 
+      margin-bottom: 3.5rem;
+
+
     }
 
   }
@@ -42,7 +47,11 @@
   &__btn {
     @include btn;
     width: 8rem;
-    margin-block: 3.5rem;
+    // margin-block: 3.5rem;
+    padding-block: 1.2rem;
+
+    transition: all 200ms ease-in-out;
+
   }
 
   &__btn:hover {

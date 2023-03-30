@@ -26,11 +26,13 @@ const Project1 = () => {
 
           <div className='header__icon__container'>
 
-            <a href="https://github.com/codek3n/caster-movie-trailer-app-2" target='_blank' rel="noreferrer">
+            {/* <a href="https://github.com/codek3n/caster-movie-trailer-app-2" target='_blank' rel="noreferrer"> */}
+            <a href="https://github.com/codek3n/caster-movie-trailer-app-2" target='_blank'>
               <FiGithub className='header__icon' />
             </a>
 
-            <a href="https://caster-movie-app.netlify.app/" target='_blank' rel="noreferrer">
+            {/* <a href="https://caster-movie-app.netlify.app/" target='_blank' rel="noreferrer"> */}
+            <a href="https://caster-movie-app.netlify.app/" target='_blank'>
               <HiArrowTopRightOnSquare className='header__icon arrow__redirect' />
             </a>
 
@@ -43,10 +45,12 @@ const Project1 = () => {
         <div className='project__image__container project__image--1' onMouseMove={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)}>
 
           {isHovering ?
-            <a href="https://caster-movie-app.netlify.app/" target='_blank' rel="noreferrer">
+            // <a href="https://caster-movie-app.netlify.app/" target='_blank' rel="noreferrer">
+            <a href="https://caster-movie-app.netlify.app/" target='_blank'>
               <img src={caster2} alt='movie app' className='project__image' />
             </a>
-            : <a href="https://caster-movie-app.netlify.app/" target='_blank' rel="noreferrer">
+            // : <a href="https://caster-movie-app.netlify.app/" target='_blank' rel="noreferrer">
+            : <a href="https://caster-movie-app.netlify.app/" target='_blank'>
               <img src={caster1} alt='movie app' className='project__image' />
             </a>}
 

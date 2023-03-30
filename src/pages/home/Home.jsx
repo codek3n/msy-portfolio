@@ -11,6 +11,7 @@ import SideNav from '../../components/side-nav/SideNav';
 import './home.scss';
 
 const Home = () => {
+  
   return (
     <div className='home'>
       <Navbar />

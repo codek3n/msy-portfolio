@@ -1,11 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './hero.scss';
 
 
 const Hero = () => {
 
-  // window.scrollTo({ top: 0 })
+  const navigate = useNavigate();
+
+  const goToResume = () => {
+    navigate('/resume')
+  }
 
   return (
     <div className='hero' id='home'>
@@ -23,31 +27,17 @@ const Hero = () => {
           I develop digital experiences.
         </h2>
 
-        {/* <p className='hero__description'>
-          I build websites that are prettier than a rainbow and more functional than a Swiss Army knife. Plus, I can make coffee disappear faster than you can say 'HTML.'"
-        </p> */}
-
         <p className='hero__description'>
           Designing websites that are so pretty, they'll make your eyes water (or maybe that's just the result of staring at a computer screen for too long)
         </p>
-        {/* 
-        <btn className='hero__resume'>
-          <p className='hero__resume__text'>
-            Check out my resume!
-          </p>
-        </btn> */}
 
-        <Link to='/resume'>
-          <button className='hero__btn'>
-            Check out my resume!
-          </button>
-        </Link>
 
-        {/* <a href="">
-          <button className='hero__btn'>
+        <button className='hero__btn'>
+          <Link to='/resume' target='_blank' className='resume__link'>
+            {/* <Link to='/resume' target='_blank'> */}
             Check out my resume!
-          </button>
-        </a> */}
+          </Link>
+        </button>
 
       </div>
 

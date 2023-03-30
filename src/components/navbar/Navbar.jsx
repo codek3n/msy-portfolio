@@ -4,9 +4,7 @@ import logo from '../../assets/svg/logo.svg';
 
 import './navbar.scss';
 
-// import { HashLink as Link } from 'react-router-hash-link';
 import { HashLink as Linking } from 'react-router-hash-link';
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [navbarClass, setNavbarClass] = useState('navbar');
@@ -14,7 +12,9 @@ const Navbar = () => {
 
   let lastScroll = 0
 
+
   const scrolling = () => {
+
 
     const currentPosition = window.scrollY
 
@@ -28,13 +28,18 @@ const Navbar = () => {
 
     if (currentPosition <= 0) {
       setNavbarClass('navbar')
+
     }
 
     lastScroll = currentPosition
   }
 
   useEffect(() => {
+
+    window.scrollTo({ top: 0 })
+
     window.addEventListener('scroll', scrolling)
+
 
     return () => {
       window.removeEventListener('scroll', scrolling)
@@ -51,16 +56,14 @@ const Navbar = () => {
   }, [isOpen])
 
 
+
   return (
     <>
       <div className={navbarClass}>
         <div className='navbar__container'>
 
           <Linking to='#home' smooth>
-            {/* <div className='navbar__logo' onClick={() => setOpen(false)}> */}
-              {/* LOGO */}
-              <img src={logo} className='logo__img' alt="logo" onClick={() => setOpen(false)}/>
-            {/* </div> */}
+            <img src={logo} className='logo__img' alt="logo" onClick={() => setOpen(false)} />
           </Linking>
 
 
