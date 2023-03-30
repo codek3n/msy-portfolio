@@ -1,15 +1,10 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './hero.scss';
 
 
 const Hero = () => {
 
-  const navigate = useNavigate();
-
-  const goToResume = () => {
-    navigate('/resume')
-  }
 
   return (
     <div className='hero' id='home'>

@@ -1,6 +1,9 @@
 @import '../../sass/index.scss';
 
 .resume__container {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 
 
   #myPDF {
@@ -13,4 +16,16 @@
   }
 }
 
-// @media (max-width:600px) {}
+@media (max-width:600px) {
+  .resume__container {
+
+    #myPDF {
+      scale: .65;
+
+      left: -5rem;
+      top: -5rem;
+      width: 143%;
+      height: 106.5vh;
+    }
+  }
+}

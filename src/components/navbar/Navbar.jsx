@@ -12,7 +12,6 @@ const Navbar = () => {
 
   let lastScroll = 0
 
-
   const scrolling = () => {
 
 
@@ -36,13 +35,16 @@ const Navbar = () => {
 
   useEffect(() => {
 
-    window.scrollTo({ top: 0 })
+    window.scrollTo({
+      top: 0,
+      // behavior: 'smooth'
+    });
 
     window.addEventListener('scroll', scrolling)
 
-
     return () => {
       window.removeEventListener('scroll', scrolling)
+      // window.scrollTo({ top: 0 })
     }
   }, [])
 
