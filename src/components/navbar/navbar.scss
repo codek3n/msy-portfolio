@@ -12,7 +12,8 @@
 
   transition: all 0.25s ease-in-out;
 
-  padding-block: 1.813rem;
+  // padding-block: 1.813rem;
+  padding-block: 1rem;
 
   letter-spacing: 0.05px;
 
@@ -20,6 +21,10 @@
 
   background-color: $color_quinary;
   backdrop-filter: opacity(0);
+
+  .logo__img {
+    width: 4rem;
+  }
 
 
   &__container {
@@ -81,6 +86,10 @@
 @media (max-width:600px) {
   .navbar {
     // border: 1px solid green;
+
+    .logo__img {
+      width: 3rem;
+    }
 
 
 

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Slant as Hamburger } from 'hamburger-react'
+import { Slant as Hamburger } from 'hamburger-react';
+import logo from '../../assets/svg/logo.svg';
 
 import './navbar.scss';
 
@@ -57,7 +58,8 @@ const Navbar = () => {
 
           <Linking to='#home' smooth>
             <h1 className='navbar__logo' onClick={() => setOpen(false)}>
-              LOGO
+              {/* LOGO */}
+              <img src={logo} className='logo__img' alt="logo" />
             </h1>
           </Linking>
 
