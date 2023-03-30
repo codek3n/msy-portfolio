@@ -12,18 +12,26 @@
 
   transition: all 0.25s ease-in-out;
 
-  // padding-block: 1.813rem;
-  padding-block: 1rem;
+  padding-block: 1.813rem;
+  // padding-block: 1rem;
 
   letter-spacing: 0.05px;
+  line-height: 0;
 
   // border: 1px solid pink;
 
   background-color: $color_quinary;
   backdrop-filter: opacity(0);
 
+  // display: flex;
+  // flex-direction: column;
+  // // align-items: center;
+  // justify-content: center;
+
+
   .logo__img {
     width: 4rem;
+    // border: 1px solid red;
   }
 
 

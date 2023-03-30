@@ -57,10 +57,10 @@ const Navbar = () => {
         <div className='navbar__container'>
 
           <Linking to='#home' smooth>
-            <h1 className='navbar__logo' onClick={() => setOpen(false)}>
+            {/* <div className='navbar__logo' onClick={() => setOpen(false)}> */}
               {/* LOGO */}
-              <img src={logo} className='logo__img' alt="logo" />
-            </h1>
+              <img src={logo} className='logo__img' alt="logo" onClick={() => setOpen(false)}/>
+            {/* </div> */}
           </Linking>
 
 
