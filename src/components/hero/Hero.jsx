@@ -1,5 +1,8 @@
 import React from 'react';
-import './hero.scss'
+import { Link } from 'react-router-dom';
+import './hero.scss';
+
+
 const Hero = () => {
 
   // window.scrollTo({ top: 0 })
@@ -34,11 +37,17 @@ const Hero = () => {
           </p>
         </btn> */}
 
-        <a href="">
+        <Link to='/resume'>
           <button className='hero__btn'>
             Check out my resume!
           </button>
-        </a>
+        </Link>
+
+        {/* <a href="">
+          <button className='hero__btn'>
+            Check out my resume!
+          </button>
+        </a> */}
 
       </div>
 
