@@ -15,7 +15,7 @@ const Contact = () => {
         </h1>
 
         <p className='contact__content'>
-          Hoping to find a frontend job that lets me turn my love for web development into a lifelong career and a legitimate excuse to buy more computer monitors"
+          Hoping to find a frontend job that lets me turn my love for web development into a lifelong career and a legitimate excuse to buy more computer monitors.
         </p>
 
 
