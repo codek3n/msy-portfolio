@@ -28,25 +28,40 @@ const AboutMe = () => {
           <div className='about-me__left'>
 
             <p>
-              Hello, I'm Melquesdec, or simply Sedic. As a <span> graphic artist</span>, I specialize in crafting <span>captivating</span> visual experiences that leave a lasting impression.
+              Well, hello there! My name is Melquesdec you can call me Sedic and I'm a <span>frontend developer</span>  who used to be a <span>graphic artist. </span>
+              I like to think of myself as a "designosaur" who evolved into a "webosaurus".
             </p>
 
             <br />
 
             <p>
-              With a <span>keen eye</span> for design and a passion for creativity, I thrive on turning ideas into stunning artworks. From concept to completion, I infuse each project with innovation and flair, ensuring it stands out in a crowded digital landscape.
+              After a year of building websites, I've become an expert in creating websites that not only <span>look great</span>  but also <span>function flawlessly. </span>
+              {/* It's like being a ninja, but with code. */}
             </p>
 
             <br />
             <p>
-              I'm constantly seeking inspiration and pushing the boundaries of my craft. Whether it's designing logos, illustrations, web designs or branding materials, I'm committed to delivering excellence in every pixel.
+              As a former graphic artist, I've always had a passion for <span>creativity</span>  and <span>design.</span>  And now, as a developer,
+              I get to combine that passion with my love of <span>problem-solving. </span>
+              It's like the perfect combination of brains and beauty.
             </p>
 
             <br />
 
+            {/* <p>
+              When I'm not busy coding, I'm strumming my guitar like nobody's business.
+              My favorite genres include rock, blues, and anything that gets my feet tapping.
+              And if I'm not playing music, you can find me exploring the virtual worlds or catching up on my favorite gaming streamers
+              (I swear, it's for research purposes). I have a passion for adventure and strategy games,
+              and nothing beats the rush of a hard-earned victory.
+            </p> */}
+
+            {/* <br /> */}
 
             <p>
-              If you're looking for a dedicated graphic artist who can bring your <span>vision</span> to life with <span>style</span> and <span>finesse</span>, let's collaborate and create something extraordinary together.
+              I'm always on the hunt for new challenges and opportunities to level up my skills.
+              So, if you're looking for a developer who's as <span>enthusiastic</span>  about your project as you are,
+              let's make some web magic happen!
             </p>
 
             <br />
@@ -59,32 +74,6 @@ const AboutMe = () => {
 
             <div className='about-me__tech-list'>
               <ul className='tech-list--left'>
-
-
-                <li className='tech-list__bullet'>
-                  <RxTriangleRight className='bullet--icon' /> Figma
-                </li>
-
-                <li className='tech-list__bullet'>
-                  <RxTriangleRight className='bullet--icon' /> Adobe XD
-                </li>
-
-                <li className='tech-list__bullet'>
-                  <RxTriangleRight className='bullet--icon' /> Adobe Photoshop
-                </li>
-
-
-                <li className='tech-list__bullet'>
-                  <RxTriangleRight className='bullet--icon' /> Adobe Illustrator
-                </li>
-
-                <li className='tech-list__bullet'>
-                  <RxTriangleRight className='bullet--icon' /> AutoCAD
-                </li>
-
-              </ul>
-
-              <ul>
 
                 <li className='tech-list__bullet'>
                   <RxTriangleRight className='bullet--icon' /> HTML5
@@ -101,6 +90,28 @@ const AboutMe = () => {
                 <li className='tech-list__bullet'>
                   <RxTriangleRight className='bullet--icon' /> React.JS
                 </li>
+
+              </ul>
+
+              <ul>
+
+                <li className='tech-list__bullet'>
+                  <RxTriangleRight className='bullet--icon' /> AutoCAD
+                </li>
+
+                <li className='tech-list__bullet'>
+                  <RxTriangleRight className='bullet--icon' /> Adobe XD
+                </li>
+
+                <li className='tech-list__bullet'>
+                  <RxTriangleRight className='bullet--icon' /> Adobe Photoshop
+                </li>
+
+                <li className='tech-list__bullet'>
+                  <RxTriangleRight className='bullet--icon' /> Adobe Illustrator
+                </li>
+
+
 
               </ul>
             </div>

@@ -19,11 +19,15 @@ const Hero = () => {
         </h1>
 
         <h2>
-          I develop digital experiences.
+          {/* I develop digital experiences. */}
+          I sculpt digital experiences.
         </h2>
 
         <p className='hero__description'>
-          Designing websites that are so pretty, they'll make your eyes water (or maybe that's just the result of staring at a computer screen for too long)
+          {/* Designing websites that are so pretty, they'll make your eyes water (or maybe that's just the result of staring at a computer screen for too long) */}
+          Crafting digital designs so mesmerizing, they might just bring a tear to your eye 
+          <br />
+          (or maybe it's just screen glare, who knows?)
         </p>
 
 
