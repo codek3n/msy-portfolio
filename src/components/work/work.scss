@@ -143,6 +143,37 @@
     margin-inline: 3.8rem;
   }
 
+  .btn_container {
+    // border: 1px solid red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__btn {
+    @include btn;
+    // width: 16rem;
+    width: 8rem;
+
+    transition: all 200ms ease-in-out;
+
+    .portfolio__link {
+      color: $color_secondary;
+      // border: 1px solid red;
+      padding-block: 1.2rem;
+      width: 100%;
+    }
+  }
+
+  &__btn:hover {
+    @include btn_hover;
+
+    .portfolio__link {
+      color: $color_primary;
+    }
+  }
+
 
 }
 
@@ -217,4 +248,6 @@
       }
     }
   }
+
+
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import './work.scss';
 
@@ -36,6 +37,17 @@ const Work = () => {
 
         <Project2 isHovering={isHovering} setIsHovering={setIsHovering} />
 
+      </div>
+
+      {/* ADDED BUTTON FOR PORTFOLIO PDF */}
+
+      <div className='btn_container'>
+        <button className='work__btn'>
+          <Link to='/portfolio' target='_blank' className='portfolio__link'>
+            {/* <Link to='/resume' target='_blank'> */}
+            See more!
+          </Link>
+        </button>
       </div>
 
 
