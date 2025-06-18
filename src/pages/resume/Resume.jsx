@@ -1,6 +1,6 @@
 import React from 'react';
 // import resumeFile from '../../assets/PDF/MSY_RESUME.pdf;
-import msyResumeCad from '../../assets/PDF/MSY_RESUME_2025.pdf'
+import msyResumeCad from '../../assets/PDF/msy_resume_2025.pdf'
 
 import './resume.scss';
 
