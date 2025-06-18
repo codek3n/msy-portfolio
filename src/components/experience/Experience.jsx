@@ -7,13 +7,14 @@ const Experience = () => {
   const [isActiveJob2, setIsActiveJob2] = useState(false)
   const [isActiveJob3, setIsActiveJob3] = useState(false)
   const [isActiveJob4, setIsActiveJob4] = useState(false)
-
+  const [isActiveJob5, setIsActiveJob5] = useState(false)
 
   const showJob1 = () => {
     setIsActiveJob1(true)
     setIsActiveJob2(false)
     setIsActiveJob3(false)
     setIsActiveJob4(false)
+    setIsActiveJob5(false)
   }
 
   const showJob2 = () => {
@@ -21,6 +22,7 @@ const Experience = () => {
     setIsActiveJob2(true)
     setIsActiveJob3(false)
     setIsActiveJob4(false)
+    setIsActiveJob5(false)
   }
 
   const showJob3 = () => {
@@ -28,6 +30,7 @@ const Experience = () => {
     setIsActiveJob2(false)
     setIsActiveJob3(true)
     setIsActiveJob4(false)
+    setIsActiveJob5(false)
   }
 
   const showJob4 = () => {
@@ -35,6 +38,15 @@ const Experience = () => {
     setIsActiveJob2(false)
     setIsActiveJob3(false)
     setIsActiveJob4(true)
+    setIsActiveJob5(false)
+  }
+
+    const showJob5 = () => {
+    setIsActiveJob1(false)
+    setIsActiveJob2(false)
+    setIsActiveJob3(false)
+    setIsActiveJob4(false)
+    setIsActiveJob5(true)
   }
 
 
@@ -64,24 +76,30 @@ const Experience = () => {
 
               <li className='job__company-name'>
                 <button className={isActiveJob1 ? 'job__list--btn list__focus' : 'job__list--btn'} onClick={() => showJob1()} autoFocus>
-                  OE Works
+                  Mobler Enterprises
                 </button>
               </li>
 
               <li className='job__company-name'>
                 <button className={isActiveJob2 ? 'job__list--btn list__focus' : 'job__list--btn'} onClick={() => showJob2()}>
-                  Phil. Granite
+                  OE Works
                 </button>
               </li>
 
               <li className='job__company-name'>
                 <button className={isActiveJob3 ? 'job__list--btn list__focus' : 'job__list--btn'} onClick={() => showJob3()}>
-                  CNI Global
+                  Phil. Granite
                 </button>
               </li>
 
               <li className='job__company-name'>
                 <button className={isActiveJob4 ? 'job__list--btn list__focus' : 'job__list--btn'} onClick={() => showJob4()}>
+                  CNI Global
+                </button>
+              </li>
+
+              <li className='job__company-name'>
+                <button className={isActiveJob5 ? 'job__list--btn list__focus' : 'job__list--btn'} onClick={() => showJob5()}>
                   AGCHEM
                 </button>
               </li>
@@ -94,6 +112,62 @@ const Experience = () => {
           <div className='experience__job-description'>
 
             <div className={isActiveJob1 ? 'job__des job--active' : 'job__des'}>
+
+              <h2 className='job__header'>
+                Autocad Draftsman
+                <span> @ Mobler Enterprises</span>
+              </h2>
+
+              <p className='job__date'>
+                Jul 2024 - Feb 2025
+              </p>
+
+              <br />
+
+              <div className='job__scope__container'>
+
+                <div className='job__scope__sub-container'>
+                  <div className='bullet--icon__container'>
+                    <RxTriangleRight className='bullet--icon' />
+                  </div>
+
+
+                  <p className='job__scope'>
+                    Prepared detailed cutting layouts and fabrication drawings for quartz and sintered stone products, including countertops, 
+                    integrated sinks, and wall cladding systems.
+
+                  </p>
+                </div>
+
+                <div className='job__scope__sub-container'>
+                  <div className='bullet--icon__container'>
+                    <RxTriangleRight className='bullet--icon' />
+                  </div>
+
+
+                  <p className='job__scope'>
+                    Created precise shop drawings and installation plans to support fabrication and on-site execution.
+                  </p>
+                </div>
+
+                <div className='job__scope__sub-container'>
+                  <div className='bullet--icon__container'>
+                    <RxTriangleRight className='bullet--icon' />
+                  </div>
+
+
+                  <p className='job__scope'>
+                    Maintained organized CAD files and drawing logs for smooth workflow and project documentation.
+                  </p>
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+            <div className={isActiveJob2 ? 'job__des job--active' : 'job__des'}>
 
               <h2 className='job__header'>
                 Graphic Design Artist
@@ -158,7 +232,7 @@ const Experience = () => {
 
             </div>
 
-            <div className={isActiveJob2 ? 'job__des job--active' : 'job__des'}>
+            <div className={isActiveJob3 ? 'job__des job--active' : 'job__des'}>
               <h2 className='job__header'>
                 Draftsman
                 <span> @  Phil. Granite Stone Corp.</span>
@@ -243,7 +317,7 @@ const Experience = () => {
 
             </div>
 
-            <div className={isActiveJob3 ? 'job__des job--active' : 'job__des'}>
+            <div className={isActiveJob4 ? 'job__des job--active' : 'job__des'}>
               <h2 className='job__header'>
                 IT Staff | Graphic Designer
                 <span> @ CNI Global Inc.</span>
@@ -296,7 +370,7 @@ const Experience = () => {
 
             </div>
 
-            <div className={isActiveJob4 ? 'job__des job--active' : 'job__des'}>
+            <div className={isActiveJob5 ? 'job__des job--active' : 'job__des'}>
               <h2 className='job__header'>
                 Autocad Designer
                 <span> @ AGCHEM Construction & Devt. Corp.</span>
