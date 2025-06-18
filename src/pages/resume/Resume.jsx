@@ -1,6 +1,6 @@
 import React from 'react';
 // import resumeFile from '../../assets/PDF/MSY_RESUME.pdf;
-import msyResumeCad from '../../assets/PDF/msy_resume_2025.pdf'
+import msyResume2025 from '../../assets/PDF/MSY_RESUME_2025.pdf'
 
 import './resume.scss';
 
@@ -15,7 +15,7 @@ const Resume = () => {
 
   return (
     <div className='resume__container'>
-      <iframe src={msyResumeCad} frameborder="0" id='myPDF' allow='true'>
+      <iframe src={msyResume2025} frameborder="0" id='myPDF' allow='true'>
       </iframe>
     </div>
   )
